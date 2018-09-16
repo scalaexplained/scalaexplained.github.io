@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+{:toc}
+
 ## Reserved keywords
 
 #### abstract
