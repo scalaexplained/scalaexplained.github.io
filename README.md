@@ -1,6 +1,7 @@
 # Scala keywords explained
 
 ## Table of Contents
+{:.no_toc}
 
 * TOC
 {:toc}
