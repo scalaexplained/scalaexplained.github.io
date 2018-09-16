@@ -5,3 +5,6 @@ markdown: kramdown
 kramdown: 
   toc_levels: "2,3,4,5,6"
 show_downloads: true
+github:
+  repo: scalaexplained/scalaexplained.github.io
+  projects: https://github.com/scalaexplained/
