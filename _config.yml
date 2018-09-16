@@ -1,6 +1,7 @@
 title: Scala Explained!
 description: Looking for a deep understanding of Scala language.
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "default"
 markdown: kramdown
 kramdown: 
