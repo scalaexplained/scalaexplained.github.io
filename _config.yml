@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 markdown: kramdown
 kramdown: 
-  toc_levels: "3,6"
+  toc_levels: "2,6"
