@@ -3,5 +3,5 @@ description: Looking for a deep understanding of Scala language.
 theme: jekyll-theme-cayman
 markdown: kramdown
 kramdown: 
-  toc_levels: "2,6"
+  toc_levels: "2,3,4,5,6"
 show_downloads: true
