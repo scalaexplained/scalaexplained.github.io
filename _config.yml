@@ -7,6 +7,7 @@ kramdown:
   toc_levels: "2,3,4,5,6"
 show_downloads: true
 github:
+  fakeroot_url: /scala-explained
   repository_url: https://github.com/yoeo/scala-explained/
   owner_url: https://github.com/yoeo/
   owner_name: yoeo
