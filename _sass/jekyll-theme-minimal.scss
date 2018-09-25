@@ -5,7 +5,6 @@ body {
   background-color: #fff;
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
   font-weight:400;
 }
 
@@ -34,12 +33,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#267CB9;
+  color:#de3423;
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color:#069;
+  color:#761c13;
   font-weight: bold;
 }
 
@@ -124,6 +123,10 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+header h1 {
+  color: #de3423;
 }
 
 ul.downloads {
@@ -284,4 +287,40 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+.menu {
+  text-align: left;
+}
+
+.menu li {
+  width: auto;
+  float: none;
+  border-right: 0;
+  height: auto;
+}
+
+.menu a {
+  font-size: medium;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: small;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.menu a:hover {
+  color: #de3423;
+  text-decoration: underline;
+}
+
+.menu .current {
+  font-size: x-large;
+  color: black;
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 70px;
+  padding-top: 30px;
 }
