@@ -11,5 +11,11 @@ github:
   repository_url: https://github.com/yoeo/scala-explained/
   owner_url: https://github.com/yoeo/
   owner_name: yoeo
+  owner_fullname: "Y. Somda"
   zip_url: https://github.com/yoeo/scala-explained/archive/master.zip
   tar_url: https://github.com/yoeo/scala-explained/archive/master.tar.gz
+  sitemenu:
+    - ""
+    - literals
+    - keywords
+    - symbols
