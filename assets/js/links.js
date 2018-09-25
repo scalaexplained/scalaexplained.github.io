@@ -29,7 +29,7 @@ function capitalize(text) {
 }
 
 function updateNextLink(document) {
-  var a = document.getElementById("next_link");
+  var a = document.getElementById("nextlink");
   var currentName = getName(document.location.toString());
   var currentID = MENU.indexOf(currentName);
   var nextID = (currentID + 1) % MENU.length;
