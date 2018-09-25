@@ -20,8 +20,6 @@
           <img src="{{ site.logo | relative_url }}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
@@ -37,20 +35,63 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <ol class="menu" type="1">
+          {% for page in site.github.sitemenu %}
+            {% if page == "" %}
+              <li><a class="menulink" href="{{ site.github.fakeroot_url | relative_url  }}">Home</a></li>
+            {% else %}
+              <li><a class="menulink" href="{{ site.github.fakeroot_url | relative_url  }}/{{ page }}.html">{{ page | capitalize }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+
       </header>
       <section>
 
       {{ content }}
+      <div class="footer">
+        <h2>Next: <a id="nextlink" href="{{ site.github.fakeroot_url | relative_url  }}">Scala explained</a></h2>
 
-      </section>
+        <ol type="1">
+          {% for page in site.github.sitemenu %}
+            {% if page == "" %}
+              <li><a href="{{ site.github.fakeroot_url | relative_url  }}">Home</a></li>
+            {% else %}
+              <li><a href="{{ site.github.fakeroot_url | relative_url  }}/{{ page }}.html">{{ page | capitalize }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </div>
+      <p>
+        This project is maintained by
+        <a href="{{ site.github.owner_url }}">
+          {{ site.github.owner_fullname }}({{ site.github.owner_name }})</a>
+        <br />
+        <small>
+          Logo by
+          <a href="https://thenounproject.com/iconisland/">Icon Island</a>
+          &mdash; theme by
+          <a href="https://github.com/orderedlist">orderedlist</a>
+          &mdash; remixed by
+          <a href="https://github.com/yoeo">yoeo</a>
+        </small>
+      </p>
+    </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    <script>
+      const SITE_ROOT = "{{ site.github.fakeroot_url | relative_url  }}";
+      const MENU = [
+        {% for page in site.github.sitemenu %}
+          "{{ page }}",
+        {% endfor %}
+      ];
+    </script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/links.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
