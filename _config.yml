@@ -16,6 +16,7 @@ github:
   tar_url: https://github.com/yoeo/scala-explained/archive/master.tar.gz
   sitemenu:
     - ""
+    - syntax
     - literals
     - keywords
     - symbols
