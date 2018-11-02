@@ -34,7 +34,7 @@
         <ol class="menu" type="1">
           {% for page in site.github.sitemenu %}
             {% if page == "" %}
-              <li><a class="menulink" href="{{ site.github.fakeroot_url | relative_url  }}">Home</a></li>
+              <li><a class="menulink" href="{{ site.github.fakeroot_url | relative_url  }}/">Home</a></li>
             {% else %}
               <li><a class="menulink" href="{{ site.github.fakeroot_url | relative_url  }}/{{ page }}.html">{{ page | capitalize }}</a></li>
             {% endif %}
