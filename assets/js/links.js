@@ -1,12 +1,17 @@
 function getName(url) {
-  var parts = url.split('/');
-  var filename = parts[parts.length - 1];
-  if (filename.indexOf('.') < 0) {
+  // drop parameters
+  let location = url.split('?')[0];
+  if (location.endsWith('/')) {
+    // home page
     return "";
   }
-  var name = filename.split('.')[0].trim().toLowerCase();
+  // other pages
+  let parts = location.split('/');
+  let filename = parts[parts.length - 1];
+  let name = filename.split('.')[0].trim().toLowerCase();
   return name;
 }
+
 
 function updateMainMenu(document) {
   var menu = document.getElementsByClassName('menulink');
