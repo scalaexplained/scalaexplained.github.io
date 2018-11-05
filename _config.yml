@@ -18,6 +18,7 @@ github:
     - ""
     - syntax
     - functions
+    - classes
     - literals
     - keywords
     - symbols
